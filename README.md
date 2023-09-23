@@ -11,7 +11,7 @@ Using starter code create a note taker application that meets the below criteria
 - Saves notes will appear in the right-hand column when selected
 - When clicking the write icon, it navigates you to the top of the page and presented with a blank field
 
-- Link to note taker application: [Note Taker](https://drive.google.com/file/d/1cUde0v6ZJeT8enNT5EkcMoXtJS3D9L57/view)
+- Link to note taker application: [Note Taker]()
 
 ## Usage
 
