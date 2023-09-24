@@ -8,7 +8,9 @@ module.exports = (app) => {
 
     
     app.get('/api/notes', (req, res) => {
-      res.sendFile(path.join(__dirname, '../db/db.json'));
+      const notes = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'))
+      console.log(notes)
+      res.json(notes);
     });
   
   
@@ -30,11 +32,8 @@ module.exports = (app) => {
     });
     
     app.delete('/api/notes/:id', (req, res) => {
-        // reading notes form db.json
         let db = JSON.parse(fs.readFileSync('db/db.json'))
-        // removing note with id
         let deleteNotes = db.filter(item => item.id !== req.params.id);
-        // Rewriting note to db.json
         fs.writeFileSync('db/db.json', JSON.stringify(deleteNotes));
         res.json(deleteNotes);
         

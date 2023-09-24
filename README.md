@@ -11,6 +11,9 @@ Using starter code create a note taker application that meets the below criteria
 - Saves notes will appear in the right-hand column when selected
 - When clicking the write icon, it navigates you to the top of the page and presented with a blank field
 
+![Note Taker Home Page](./images/Screenshot1.png)
+![Note Taker Notes Page](./images/Screenshot2.png)
+
 - Link to note taker application: [Note Taker]()
 
 ## Usage
