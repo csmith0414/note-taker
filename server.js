@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 
 // set up ports
-const PORT = process.env.port || 3001;
+const PORT = process.env.PORT || 3001;
 
 // setting up static to public folder
 app.use(express.static('public'));
